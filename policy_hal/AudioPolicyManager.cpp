@@ -1135,7 +1135,7 @@ status_t AudioPolicyManagerCustom::startSource(const sp<AudioOutputDescriptor> o
                 }
             }
         }
-        uint32_t muteWaitMs = setOutputDevice(outputDesc, device, force, 0, NULL, address);
+        uint32_t muteWaitMs = setOutputDevice(outputDesc, device, force, 0);
 
         // handle special case for sonification while in call
         if (isInCall()) {
